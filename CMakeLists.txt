@@ -273,7 +273,7 @@ if(VLLM_GPU_LANG STREQUAL "CUDA")
   else()
     FetchContent_Declare(
         cutlass
-        GIT_REPOSITORY https://github.com/nvidia/cutlass.git
+        GIT_REPOSITORY cutlass/
         # Please keep this in sync with CUTLASS_REVISION line above.
         GIT_TAG ${CUTLASS_REVISION}
         GIT_PROGRESS TRUE
